@@ -25,8 +25,7 @@ sbt "Test/runMain vexiiriscv.soc.litex.SocGen \
   --lsu-l1-refill-count=2 \
   --lsu-l1-writeback-count=2 \
   --lsu-l1-mem-data-width-min=32 \
-  --memory-region=2147483648,16777216,rwxc,m \
-  --memory-region=2415919104,268435456,rwxc,m \
+  --memory-region=2147483648,536870912,rwxc,m \
   --memory-region=268435456,268435456,rw,p \
   --with-rdtime \
   --with-sstc \
