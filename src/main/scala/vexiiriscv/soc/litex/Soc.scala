@@ -593,7 +593,10 @@ object SocGen extends App{
 
   val spinalConfig = SpinalConfig(inlineRom = true, targetDirectory = netlistDirectory)
   spinalConfig.addTransformationPhase(new MultiPortWritesSymplifier)
-  spinalConfig.addStandardMemBlackboxing(blackboxPolicy)
+
+
+// Disable external RAM blackboxes for FPGA/Vivado synthesis
+//  spinalConfig.addStandardMemBlackboxing(blackboxPolicy)
 //  spinalConfig.addTransformationPhase(new EnforceSyncRamPhase)
 
   val report = spinalConfig.generateVerilog {
