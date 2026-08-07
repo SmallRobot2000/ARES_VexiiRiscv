@@ -12,6 +12,7 @@ sbt "Test/runMain vexiiriscv.soc.litex.SocGen \
   --with-rvm \
   --with-rva \
   --with-rvf \
+  --with-rvd \
   --with-rvc \
   --with-rvZcbm \
   --with-fetch-l1 \
