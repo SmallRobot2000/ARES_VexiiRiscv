@@ -30,7 +30,7 @@ sbt "Test/runMain vexiiriscv.soc.litex.SocGen \
   --memory-region=268435456,268435456,rw,p \
   --with-rdtime \
   --with-sstc \
-  --pmp-size=4 \
+  --pmp-size=8 \
   --with-axilite-xlen \
   --netlist-directory=generated \
   --netlist-name=VexiiSoc"
